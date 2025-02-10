@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <!-- CSS only -->   
+    <link rel="stylesheet" href="css/highlight.min.css"> 
+    <!-- My Style CSS --> 
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Important Css And JS Snippet Code</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="header__wrapper">
+        <div class="container"> 
+            <div class='form-container'> 
+                <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </span>
+                <input class='input mb-5' type="search" id="searchbox" placeholder="Live search keyword...">
+            </div>
+        </div>
+        <button id="myBtn" style="opacity: 0;">Open Modal</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal"> 
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Some text in the Modal...</p>
+            </div> 
+        </div>
+    </div>
+
+
+     
+    
+
+    <section class="second_sec__wrapper">
+        <div class="container">
+            <div class="row justify-content-center cards">
+                <div class="col-6">
+                    <!-- Gallery Image Ratio ================================================================================= -->
+                    <div class="content_box box">
+                        <h2>Git commands for new/existing project</h2>
+<pre><code class="javascript">echo "# canulo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/shuvrod564/canulo.git
+git push -u origin main
+--------------------------------------------------------------
+git remote add origin https://github.com/shuvrod564/canulo.git
+git branch -M main
+git push -u origin main
+</code></pre>          
+                    </div> 
+                    <div class="content_box box">
+                        <h2>Inline background image use</h2>
+<pre><code class="javascript">&lt;div className="min-h-[300px] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url('/images/banner/profile-page-bg-image.webp')` }}&gt;&lt;div&gt;
+</code></pre>          
+                    </div> 
+                    <!-- Gallery Image Ratio ================================================================================= -->
+                    <div class="content_box box">
+                        <h2>Run website always with https</h2>
+<pre><code class="javascript">&lt;IfModule mod_rewrite.c&gt;
+    RewriteEngine On
+  
+    # Redirect HTTP to HTTPS
+    RewriteCond %{HTTPS} !=on
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+&lt;/IfModule&gt;
+  
+</code></pre>          
+                    </div> 
+                    <!-- Gallery Image Ratio ================================================================================= -->
+                    <div class="content_box box">
+                        <h2>Copy Checkbox List</h2>
+<pre><code class="javascript"> <a href="https://jsfiddle.net/davidThomas/b33c571n/2/">https://jsfiddle.net/davidThomas/b33c571n/2/</a> <br> 
+</code></pre>          
+                    </div> 
+                    <!-- Gallery Image Ratio ================================================================================= -->
+                    <div class="content_box box">
+                        <h2>svg image</h2>
+<pre><code class="javascript"> <a href="https://storyset.com/search">https://storyset.com/search</a> <br>
+Free Illustration svg image
+</code></pre>          
+                    </div> 
+                    <!-- Gallery Image Ratio ================================================================================= -->
+                    <div class="content_box box">
+                        <h2>Free Invoice Builder</h2>
+<pre><code class="javascript"> <a href="https://www.refrens.com/">https://www.refrens.com/</a> <br>
+login with shuvrod564@gmail.com
+</code></pre>          
+                    </div> 
+                    <!-- Gallery Image Ratio ================================================================================= -->
+                    <div class="content_box box">
+                        <h2>Image Ratio</h2>
+<pre><code class="javascript">img1(col-3)     img2(col-3)         img3(col-6) 
+700x800         700x800             1024x576
+</code></pre>          
+                    </div> 
+                    <!-- Gallery Image Ratio ================================================================================= -->
+                    <div class="content_box box">
+                        <h2>Owl carousel box shadow cut off</h2>
+<pre><code class="javascript">.owl-carousel .owl-stage-outer {
+    height: calc(100% + 30px);
+    margin: -15px;
+    padding: 15px;
+    width: calc(100% + 30px);
+}
+</code></pre>          
+                    </div> 
+                    <!-- Gallery Image Ratio ================================================================================= -->
+                    <div class="content_box box">
+                        <h2>Owl carousel box shadow cut off</h2>
+<pre><code class="javascript">$("#hero__search__form").submit(function() {
+    if (validateAvailabilityForm()) {
+      return true;
+    }
+    else {
+      return false;
+    }
+}); 
+function validateAvailabilityForm() {
+    var valid = true;	
+    $(".form-control").css('border-color','');
+    $(".error").html('');
+
+    // Hotel validation
+    if(!$("#searchHotel").val()) {
+        $("#searchHotel-error").html("Hotel required");
+        $("#searchHotel").css('border-color','#dc3545');
+        valid = false;
+    } else {
+        $("#searchHotel-error").html("");
+        $("#searchHotel").css('border-color','#099f1a');
+    } 
+     return valid;
+}
+
+</code></pre>          
+                    </div> 
+
+
+                    <!-- Meteor Running Machine Slow ================================================================================= -->
+                    <div class="content_box box">
+                        <h2>After Install Meteor, add this exclusions in vs code setting.json</h2>
+<pre><code class="javascript">"files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/dist": true,
+    "**/.meteor/local": true
+},
+"files.exclude": {
+    "**/.git": true,
+    "**/.meteor/local": true,
+    "**/dist": true,
+    "*.map": true
+},
+</code></pre>          
+                    <p style="padding: 10px;">*** Note: Turn off windows defender Real-time protection, Add vs code Exclusion on windows defender -> Virus threat protection. Follow: <a href="https://www.tenforums.com/tutorials/5924-add-remove-microsoft-defender-antivirus-exclusions-windows-10-a.html">Visit url</a></p>
+                    </div> 
+                    <!-- Scroll Up Navbar ================================================================================= -->
+                    <div class="content_box box">
+                        <h2>SMTP Mailer Settings</h2>
+<pre><code class="javascript">1. On Less Secure app (** if two step varification is on less secure app setting will hide ),
+2. Enable IMAP from setting > Forwarding and POP/IMAP > IMAP,
+3. Allow access from: accounts.google.com/DisplayUnlockChaptcha
+</code></pre>          
+                    </div> 
+                    <!-- Scroll Up Navbar ================================================================================= -->
+                    <div class="content_box box">
+                        <h2>Navbar fixed top when scroll</h2>
+<pre><code class="javascript">/*____ Nav Bar Fixed Top Vanilla Java Script ________________*/
+window.addEventListener('scroll', function(){ 
+    var menubar = document.querySelector("#mainNav"); 
+    menubar.classList.toggle("fixed-top", window.scrollY > 600);
+});
+</code></pre>
+<hr>
+<pre><code class="javascript">/*____ Nav Bar Fixed Top Script ________________*/
+$(window).scroll(function () {
+    // console.log($(window).scrollTop());
+    if ($(window).scrollTop() > 250) {
+        $('#myNav').addClass('fixed-top');
+    }
+    if ($(window).scrollTop() < 250) {
+        $('#myNav').removeClass('fixed-top');
+    }
+});
+</code></pre>         
+                    </div> 
+                    <!-- Scroll Up Navbar ================================================================================= -->
+                    <div class="content_box box">
+                        <h2>When Scroll Up Navbar Is Showing</h2>
+<pre><code class="javascript">/*--------- Navbar Showing When Scroll Up Script -----------*/
+$('body').css('padding-top', $('.navbar').outerHeight() + 'px')
+// detect scroll top or down
+if ($('.smart-scroll').length > 0) { // check if element exists
+    var last_scroll_top = 0;
+    $(window).on('scroll', function() {
+        scroll_top = $(this).scrollTop();
+        if (scroll_top < last_scroll_top) {
+            $('.smart-scroll').removeClass('scrolled-down').addClass('scrolled-up');
+        } else {
+            $('.smart-scroll').removeClass('scrolled-up').addClass('scrolled-down');
+        }
+        last_scroll_top = scroll_top;
+    });
+}
+</code></pre>     
+<pre><code class="css">/*--------- Navbar Showing When Scroll Up CSS -----------*/  
+.smart-scroll {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.scrolled-down {
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up {
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+}
+</code></pre>     
+                    </div> 
+                    <!-- Nav Link Active Class Change ================================================================================= -->
+                    <div class="content_box box">
+                        <h2>Nav Link Active Class Change In Li</h2>
+    <pre><code class="javascript">/*--------- Navbar Active Link Select Script -----------*/
+    $("#myNav .navbar-nav li a").filter(function() {
+        return this.href == location.href.replace(/#.*/, "");
+    }).parents("li").addClass("active");
+    </code></pre>     
+                    </div> 
+                    <!-- Back To Top Button ================================================================================= -->
+                    <div class="content_box box">
+                        <h2>Back To Top Button</h2>
+<pre><code class="javascript">/*-------- Script: Back To Top ----------*/
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 600) {
+        $(".backTop").addClass('show');
+    } else {
+        $(".backTop").removeClass('show');
+    }
+}); 
+$(".backTop").on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, '300');
+});
+</code></pre>     
+<pre><code class="javascript">/*---------------------- Back to Top Css --------------*/
+.backTop {
+    position: fixed;
+    bottom: 2rem;
+    right: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: #333;
+    z-index: 999;
+    display: none; 
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0iZmVhdGhlciBmZWF0aGVyLWNoZXZyb24tdXAiPjxwb2x5bGluZSBwb2ludHM9IjE4IDE1IDEyIDkgNiAxNSI+PC9wb2x5bGluZT48L3N2Zz4=);
+    background-repeat: no-repeat;
+    background-size: 1.75rem;
+    background-position: center center;
+}
+.backTop:hover { 
+    background-color: #000; 
+}
+</code></pre>     
+                    </div>
+
+                    <!-- Marquee by js ================================================================================= -->
+                    <div class="content_box box">
+                        <h2>Custom Marquee by Javascript</h2>
+<pre><code class="html">&lt;!-- HTML --&gt;
+&lt;p class="para" id="para1"&gt;
+    Geeksforgeeks | A computer science portal for geeks &lt;span&gt;Lorem ipsum dolor sit amet consectetur.&lt;/span&gt;
+&lt;/p&gt;
+</code></pre>     
+<pre><code class="javascript">/*-------- Script: Custome marquee text ----------*/
+const para1 = document.getElementById("para1");
+animate(para1);
+function animate(element) {
+    let elementWidth = element.offsetWidth;
+    let parentWidth = element.parentElement.offsetWidth;
+    let flag = 0;
+  
+    setInterval(() => {
+        element.style.marginLeft = --flag + "px";
+  
+        if (elementWidth == -flag) {
+            flag = parentWidth;
+        }
+    }, 10);
+}
+</code></pre>     
+<pre><code class="javascript">/*-----Custome Marquee Text Css ------*/
+.para{
+    color: black;
+    font-weight: bold;
+    white-space: nowrap;
+    clear: both; 
+}
+</code></pre>     
+                    </div>
+
+                    <!-- Date Icon Hide ================================================================================= -->
+                    <div class="content_box box">
+                        <h2>Date Icon Hide</h2> 
+<pre><code class="css">/*-------- Hide Default Browser Date & Time Icon ----------*/
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+input[type="time"]::-webkit-inner-spin-button,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+</code></pre>        
+                    </div>
+
+                    <!-- Onfocus Input Type Change To date ================================================================================= -->
+                    <div class="content_box box">
+                        <h2>Onfocus Input Type Change To date</h2> 
+<pre><code class="css">onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}"
+
+onfocus="(this.type='time')" onblur="if(this.value==''){this.type='text'}"
+</code></pre>        
+                    </div>
+
+                    <!-- Custom Scrollbar ================================================================================= -->
+                    <div class="content_box box">
+                        <h2>Custom Scrollbar</h2> 
+<pre><code class="css" id="csb">.scroller * { scrollbar-width: thin;scrollbar-color: #ddd #eee; }
+.scroller *::-webkit-scrollbar { width: 12px; } 
+.scroller *::-webkit-scrollbar-track { background: #eee; }
+.scroller *::-webkit-scrollbar-thumb { background-color: #ddd;border-radius: 20px;border: 3px solid #eee; }
+</code></pre>        <button onclick="copyToClipboard('#csb')"></button>
+                    </div>
+
+                    <!-- Call Btn Pulse Animation ================================================================================= -->
+                    <div class="content_box box">
+                        <h2>Call Btn Pulse Animation</h2> 
+<pre><code class="css" id="animateBtn">.fixed__call {
+    bottom: 2rem;left: 2rem;z-index: 999;
+    -webkit-box-shadow: 0 0 0 #0568A8;
+    box-shadow: 0 0 0 #0568A8;
+    -webkit-animation: pulse 1.5s infinite;
+    animation: pulse 1.5s infinite;
+}
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 #0568A8;
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 1.25rem #0567a800;
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 #0567a800;
+    }
+}
+@keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 0 0 #0568A8;
+        box-shadow: 0 0 0 0 #0568A8;
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 1.25rem #0567a800;
+        box-shadow: 0 0 0 1.25rem #0567a800;
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 #0567a800;
+        box-shadow: 0 0 0 0 #0567a800;
+    }
+}
+</code></pre>        <button onclick="copyToClipboard('#animateBtn')"></button>
+                    </div>
+
+                     
+                </div><!--.//con--6-->
+
+
+
+
+
+                <div class="col-6">
+                    <!-- small font ================================================================================= -->
+                    <div class="content_box box">
+                        <h2>Update Existing Project Packages</h2>
+<pre><code class="html">npx npm-check-updates -u
+npm install 
+
+</code></pre>
+                    </div>
+                    <div class="content_box box">
+                        <h2>Codepen List</h2>
+<pre><code class="html"> <p>&#9728; <b>JQuery script for counter without counter.js and waypoints.js</b></p>
+<a href="https://codepen.io/Creasium/pen/KKdZoja" target="_blank">https://codepen.io/Creasium/pen/KKdZoja</a> <br>
+<p>&#9728; <b>Slider Animation Effect</b></p>
+<a href="https://codepen.io/ibat/pen/apWNrx" target="_blank">https://codepen.io/ibat/pen/apWNrx</a> <br>
+<p>&#9728; <b>slick slider layer sliding with animate css</b></p>
+<a href="https://codepen.io/young/pen/MWYzOgO" target="_blank">https://codepen.io/young/pen/MWYzOgO</a> <br>
+<p>&#9728; <b>Custome range slider</b></p>
+<a href="https://codepen.io/armanb/pen/GRBjVgd" target="_blank">https://codepen.io/armanb/pen/GRBjVgd</a>
+<p>&#9728; <b>Double range slider</b></p>
+<a href="https://codepen.io/helev/pen/ZEEjqzG" target="_blank">https://codepen.io/helev/pen/ZEEjqzG</a>
+<p>&#9728; <b>Double range slider</b></p>
+<a href="https://codepen.io/glitchworker/pen/XVdKqj" target="_blank">https://codepen.io/glitchworker/pen/XVdKqj</a>
+
+</code></pre>
+                    </div>
+                    <!-- Viewport ================================================================================= -->
+                    <div class="content_box box">
+                        <h2>Viewport</h2>
+<pre><code class="html">content="width=device-width, minimum-scale=1.0, initial-scale=1, shrink-to-fit=no"
+    
+&lt;meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, shrink-to-fit=no"&gt;
+</code></pre>
+                    </div>
+                    <!-- Elipps ================================================================================= -->
+                    <div class="content_box box">
+                        <h2>Ellipsis in two line</h2>
+<pre><code class="css">.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    max-width: 289px;
+}
+</code></pre>
+                    </div>
+                    <!-- Elipps ================================================================================= -->
+                    <div class="content_box box">
+                        <h2>Background image shadow</h2>
+<pre><code class="css">box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.34);</code></pre>
+                    </div>
+                    <!-- black to white ================================================================================= -->
+                    <div class="content_box box">
+                        <h2>Black image to white by css filter</h2>
+<pre><code class="css">.hover_box:hover {
+    filter: contrast(0) brightness(10);
+}
+</code></pre>
+                    </div>
+					
+					<!-- black to white ================================================================================= -->
+                    <div class="content_box box">
+                        <h2>White image to Black by css filter</h2>
+<pre><code class="css">.hover_box:hover {
+    filter: contrast(1000%) invert(100%) sepia(100%) saturate(10000%) hue-rotate(90deg);
+}
+</code></pre>
+                    </div>
+					
+					
+                    <!-- Hover Shadow ================================================================================= -->
+                    <div class="content_box box">
+                        <h2>Hover Box Shadow</h2>
+<pre><code class="css">.hover_box:hover {
+    -webkit-box-shadow: 0 2.8px 2.2px 0 rgba(0, 0, 0, 0.02),
+                    0 6.7px 5.3px 0 rgba(0, 0, 0, 0.03),
+                    0 12.5px 10px 0 rgba(0, 0, 0, 0.04),
+                    0 22.3px 17.9px 0 rgba(0, 0, 0, 0.05),
+                    0 41.8px 33.4px 0 rgba(0, 0, 0, 0.05),
+                    0 100px 80px 0 rgba(0, 0, 0, 0.07);
+    box-shadow: 0 2.8px 2.2px 0 rgba(0, 0, 0, 0.02),
+            0 6.7px 5.3px 0 rgba(0, 0, 0, 0.03),
+            0 12.5px 10px 0 rgba(0, 0, 0, 0.04),
+            0 22.3px 17.9px 0 rgba(0, 0, 0, 0.05),
+            0 41.8px 33.4px 0 rgba(0, 0, 0, 0.05),
+            0 100px 80px 0 rgba(0, 0, 0, 0.07);
+}
+</code></pre>
+                    </div>
+                    <!-- iframe video responsive height ================================================================================= -->
+                    <div class="content_box box">
+                        <h2>iframe video responsive height ratio set by css</h2>
+<pre><code class="css">.video {
+    overflow: hidden;position: relative;width: 100%;background-color: #ccc; 
+    &::after { padding-top: 56.25%;display: block;content: ''; }
+    iframe {
+        position: absolute;top: 0;left: 0;
+        width: 100%;height: 100%;border-width: 0px;
+    }
+}
+
+.video {
+    overflow: hidden;position: relative;width: 100%;background-color: #ccc; 
+}
+.video::after { padding-top: 56.25%;display: block;content: ''; }
+.video iframe {
+    position: absolute;top: 0;left: 0;
+    width: 100%;height: 100%;border-width: 0px;
+}
+</code></pre>
+                    </div>
+
+                    <!-- Tooltip Activate ================================================================================= -->
+                    <div class="content_box box">
+                        <h2>Tooltip Activate Globally</h2>
+<pre><code class="javascript">var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"], .hasTooltip'));
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+	return new bootstrap.Tooltip(tooltipTriggerEl,{
+		html: true
+	});
+});
+</code></pre>  
+                    </div>
+                    <!-- ================================================================================= -->
+                    <div class="content_box box">
+                        <h2>Owl carousel activation script</h2>
+    <pre><code class="javascript">$(".newsSlider").owlCarousel({
+    items: 3,
+    autoplay:true,
+    autoplayTimeout: 5500,
+    autoplayHoverPause: true, 
+    smartSpeed: 550,
+    loop: true,
+    margin: 20,  
+    nav: false,
+    dots: true,
+    responsiveClass: true, 
+    responsive: { 
+        0: { items: 1 },
+        600: { items: 2 },
+        992: { items: 3 },
+        1200: { items: 3 }
+    },
+});   
+    </code></pre>  
+                    </div>
+                    <!-- ================================================================================= -->
+                    <div class="content_box box">
+                        <h2>Hide Scrollbar</h2>
+    <pre><code class="css">/*----- Hide Scrollbar ------*/
+    .example::-webkit-scrollbar {
+        display: none;
+    }
+    .example {
+        -ms-overflow-style: none; 
+        scrollbar-width: none;  
+    } 
+    </code></pre>  
+                    </div>
+					<!-- ================================================================================= -->
+                    <div class="content_box box">
+                        <h2>Target Boxshadow</h2>
+    <pre><code class="css">/*----- Hide Scrollbar ------*/
+#demoObject {
+	-webkit-box-shadow: 0px 20px 0px -10px #FFFFFF, 0px -20px 0px -10px #FFFFFF, 20px 0px 0px -10px #FFFFFF, -20px 0px 0px -10px #FFFFFF, 0px 0px 0px 10px #FF0000, 5px 5px 15px 5px rgba(0,0,0,0); 
+	box-shadow: 0px 20px 0px -10px #FFFFFF, 0px -20px 0px -10px #FFFFFF, 20px 0px 0px -10px #FFFFFF, -20px 0px 0px -10px #FFFFFF, 0px 0px 0px 10px #FF0000, 5px 5px 15px 5px rgba(0,0,0,0);
+	background: #FFFFFF;
+}
+    </code></pre>  
+                    </div>
+					<!-- ================================================================================= -->
+                    <div class="content_box box">
+                        <h2>Whatsapp number set in a tag</h2>
+    <pre><code class="css"> 
+&lt;a href="https://wa.me/&lt;number&gt;" target="_blank"&gt;&lt;Send Message&lt;/a&gt;
+ 
+    </code></pre>  
+                    </div>
+                    <!-- ================================================================================= -->
+					
+					<div class="content_box box">
+                        <h2>Portfolio Genaretor</h2>
+    <pre><code class="css">
+https://rytr.me/use-cases/testimonial-review-generator 
+    </code></pre>  
+                    </div>
+                    <!-- ================================================================================= -->
+						
+					<div class="content_box box">
+                        <h2>Form Validation by javascript only</h2>
+    <pre><code class="css">
+https://codepen.io/imtasawar/pen/PvBZoM
+    </code></pre>  
+                    </div>
+                    <!-- ================================================================================= -->
+					
+						
+					<div class="content_box box">
+                        <h2>Open modal from modal</h2>
+    <pre><code class="css">
+$("#myModal2").on('show.bs.modal', function (e) {
+    $("#myModal1").modal("hide");
+});
+    </code></pre>  
+                    </div>
+                    <!-- ================================================================================= -->
+
+					<div class="content_box box">
+                        <h2>Download YouTube Thumbnail</h2>
+    <pre><code class="html">
+<a href="https://www.softr.io/tools/download-youtube-thumbnail">https://www.softr.io/tools/download-youtube-thumbnail</a>
+    </code></pre>  
+                    </div>
+                    <!-- ================================================================================= -->
+					
+				
+                    
+                </div>
+            </div>
+            <!--/.row-->
+        </div>
+        <!--/.container-->
+    </section>
+
+
+    
+  
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <script src="js/jQuery-v-3.5.1.js"></script> 
+    <script src="js/highlight.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+
+    <script>hljs.initHighlightingOnLoad();</script> 
+    <script>
+        function copyToClipboard(element) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($(element).text()).select();
+            document.execCommand("copy");
+            $temp.remove();
+        }
+    </script>
+    <script>
+        let cards = document.querySelectorAll('.box')
+    
+    function liveSearch() {
+        let search_query = document.getElementById("searchbox").value;
+        
+        //Use innerText if all contents are visible
+        //Use textContent for including hidden elements
+        for (var i = 0; i < cards.length; i++) {
+            if(cards[i].textContent.toLowerCase()
+                    .includes(search_query.toLowerCase())) {
+                cards[i].classList.remove("is-hidden");
+            } else {
+                cards[i].classList.add("is-hidden");
+            }
+        }
+    }
+    
+    //A little delay
+    let typingTimer;               
+    let typeInterval = 500;  
+    let searchInput = document.getElementById('searchbox');
+    
+    searchInput.addEventListener('keyup', () => {
+        clearTimeout(typingTimer);
+        typingTimer = setTimeout(liveSearch, typeInterval);
+    });
+    </script>
+</body>
+
+</html>

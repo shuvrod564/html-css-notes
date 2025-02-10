@@ -1,0 +1,224 @@
+
+@import "./class";
+
+ 
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.col-5 {
+    flex: 0 0 41.6%;
+    max-width: 41.6%;
+    padding: 0 12px;
+}
+
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 12px;
+}
+
+.col-7 {
+    flex: 0 0 58.1%;
+    max-width: 58.1%;
+    padding: 0 12px;
+}
+
+.col-8 {
+    flex: 0 0 auto;
+    width: 66.6666666667%;
+}
+
+.col-4 {
+    flex: 0 0 auto;
+    width: 33.3333333333%;
+    padding: 0% 10px;
+}
+
+.col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 0 12px;
+}
+ 
+.mb {
+    margin-bottom: .6rem;
+}
+
+a {
+    padding: 5px 12px 5px 12px;
+    background-color: #e9390e;
+    border-radius: 20px;
+    color: #fff;
+    line-height: 1;
+    font-size: 13px;
+    text-decoration: none;
+    font-family: Roboto,tahoma,arial,sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .6px;
+    transition: all .3s ease-in-out;
+    
+    &:hover {
+        background-color: #162e66;
+        
+    }
+}
+ 
+.box { 
+    position: relative; 
+    button { 
+        border: 1px solid #eee;width: 24px;height: 24px;border-radius: 50%;
+        background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM0NDQiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0iZmVhdGhlciBmZWF0aGVyLWNsaXBib2FyZCI+PHBhdGggZD0iTTE2IDRoMmEyIDIgMCAwIDEgMiAydjE0YTIgMiAwIDAgMS0yIDJINmEyIDIgMCAwIDEtMi0yVjZhMiAyIDAgMCAxIDItMmgyIj48L3BhdGg+PHJlY3QgeD0iOCIgeT0iMiIgd2lkdGg9IjgiIGhlaWdodD0iNCIgcng9IjEiIHJ5PSIxIj48L3JlY3Q+PC9zdmc+') no-repeat center center / 14px;
+        cursor: pointer;background-color: #fff;
+        position: absolute;
+        top: 48px;
+        right: 5px;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 99;
+    
+        &:hover {
+            background-color: #eee;
+        }
+    }
+
+    &:hover button { opacity: 1;visibility: visible; }
+}
+
+
+
+ 
+
+
+ul {
+    margin-top: 15px;
+    li {
+        margin-bottom: 8px;
+        font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: #393939;
+    }
+}
+
+pre, .hljs {
+    background: #fbedbb;
+}
+
+
+.hljs-string, .hljs-variable {
+    color: hsl(80,80.5%,26.5%);
+}
+
+.hljs-keyword {
+    color: hsl(206,98.5%,29%);
+}
+
+.hljs-title {
+    color: hsl(27,99%,36%);
+}
+
+.hljs-params {
+    color: #262626;
+}
+.hljs-symbol {
+    color: hsl(306,43%,35%);
+}
+
+ 
+.header__wrapper {
+    padding: 80px 0;
+}
+
+
+.form-container {
+    display: flex;
+    align-items: center;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    input {
+        width: 100%;
+        height: 56px;
+        font-size: 22px;
+        padding: 4px 10px;
+        border: 0;
+        font-family: 'Maven Pro', sans-serif;
+        font-weight: 400;
+        &:focus {
+            outline: none;
+            box-shadow: none;
+
+        }
+    }
+    .icon {
+        width: 50px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+            width: 20px;
+            height: 20px;
+            color: #384f64;
+        }
+    }
+}
+
+.is-hidden { display: none; }
+
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
