@@ -403,7 +403,26 @@ onfocus="(this.type='time')" onblur="if(this.value==''){this.type='text'}"
 
 
                 <div class="col-6">
-                    <!-- small font ================================================================================= -->
+                    <!--  -->
+                    <div class="content_box box">
+                        <h2>XAMPP Mysql port change process</h2>
+                        <ol>
+                            <li>Change - Mysql port from xammp control panel Admin(button)</li>
+                            <li>Go to-> xammp/phpMyAdmin/config.inc.php. replace</li>
+                        </ol>
+                        
+<pre><code class="html">/* Bind to the localhost ipv4 address and tcp */
+$cfg['Servers'][$i]['host'] = '127.0.0.1';
+$cfg['Servers'][$i]['connect_type'] = 'tcp';
+=====================================================
+/* Bind to the localhost ipv4 address and tcp */
+$cfg['Servers'][$i]['host'] = '127.0.0.1:3308';
+$cfg['Servers'][$i]['connect_type'] = 'tcp';
+$cfg['Servers'][$i]['port'] = '3308';
+</code></pre>
+                    </div>
+
+                    <!--  -->
                     <div class="content_box box">
                         <h2>Update Existing Project Packages</h2>
 <pre><code class="html">npx npm-check-updates -u

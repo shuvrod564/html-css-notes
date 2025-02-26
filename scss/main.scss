@@ -222,3 +222,13 @@ pre, .hljs {
     text-decoration: none;
     cursor: pointer;
   }
+
+ol {
+    padding: 6px 20px;
+    font-size: 12px;
+    background-color: #ffe895;
+
+    li {
+        list-style-type: decimal;
+    }
+}
