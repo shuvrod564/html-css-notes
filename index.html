@@ -49,6 +49,18 @@
                 <div class="col-6">
                     <!-- Gallery Image Ratio ================================================================================= -->
                     <div class="content_box box">
+                        <h2>Responsive Image Setup</h2>
+<pre><code class="javascript"> 
+&lt;picture&gt;
+    &lt;source srcset="images/global/certificate-banner-image-mobile.webp" media="(max-width: 575px)"&gt;
+    &lt;source srcset="images/global/certificate-banner-image-1.webp"&gt;
+    &lt;img src="images/global/certificate-banner-image-1.jpg" class="img-fluid" loading="lazy" alt="certification thumbnail" width="1165" height="537"&gt;
+&lt;/picture&gt;
+
+</code></pre>          
+                    </div> 
+                    <!-- Gallery Image Ratio ================================================================================= -->
+                    <div class="content_box box">
                         <h2>Git commands for new/existing project</h2>
 <pre><code class="javascript">echo "# canulo" >> README.md
 git init
