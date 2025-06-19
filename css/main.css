@@ -195,6 +195,34 @@ a:hover {
   background-color: #162e66;
 }
 
+.link__list {
+  margin-bottom: 30px;
+}
+.link__list li {
+  position: relative;
+  padding-left: 16px;
+}
+.link__list li a {
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  text-transform: capitalize;
+}
+.link__list li a:hover {
+  text-decoration: underline;
+  color: #e9390e;
+}
+.link__list li::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: #e9390e;
+  position: absolute;
+  top: 8px;
+  left: 0;
+}
+
 .box {
   position: relative;
 }

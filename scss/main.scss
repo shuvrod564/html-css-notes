@@ -76,6 +76,25 @@ a {
         
     }
 }
+
+.link__list {
+    margin-bottom: 30px;
+    li {
+        position: relative;
+        padding-left: 16px;
+        a {
+            background-color: transparent;font-size: 18px;font-weight: 500;color: #000;text-transform: capitalize;
+
+            &:hover {
+                text-decoration: underline;color: #e9390e;
+            }
+        }
+
+        &::before {
+            content: '';width: 20px;height: 2px;background-color: #e9390e;position: absolute;top: 8px;left: 0;
+        }
+    }
+}
  
 .box { 
     position: relative; 

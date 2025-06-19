@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <!-- CSS only -->   
+    <link rel="stylesheet" href="css/highlight.min.css"> 
+    <!-- My Style CSS --> 
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Important Css And JS Snippet Code</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="header__wrapper">
+        <div class="container"> 
+            <div class='form-container'> 
+                <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </span>
+                <input class='input mb-5' type="search" id="searchbox" placeholder="Live search keyword...">
+            </div>
+        </div> 
+    </div>
+ 
+
+    <section class="second_sec__wrapper">
+        <div class="container">
+            <div class="row justify-content-center cards">
+                <div class="col-6">
+                    <ul class="link__list">
+                        <li>
+                            <a href="https://colorwhistle.com/wordpress-functions-list/" target="_blank">WordPress Functions List for Custom Theme Development</a>
+                        </li>
+                    </ul>
+
+                    <ul class="link__list">
+                        <li>
+                            <a href="https://colorwhistle.com/category/development/page/2/" target="_blank">WordPress Blogs</a>
+                        </li>
+                    </ul>
+ 
+                </div><!--.//con--6-->
+
+
+
+
+
+                <div class="col-6">
+                    <!--  -->
+                    <div class="content_box box">
+                        <h2>XAMPP Mysql port change process</h2>
+                        <ol>
+                            <li>Change - Mysql port from xammp control panel Admin(button)</li>
+                            <li>Go to-> xammp/phpMyAdmin/config.inc.php. replace</li>
+                        </ol>
+                        
+<pre><code class="html">/* Bind to the localhost ipv4 address and tcp */
+$cfg['Servers'][$i]['host'] = '127.0.0.1';
+$cfg['Servers'][$i]['connect_type'] = 'tcp';
+=====================================================
+/* Bind to the localhost ipv4 address and tcp */
+$cfg['Servers'][$i]['host'] = '127.0.0.1:3308';
+$cfg['Servers'][$i]['connect_type'] = 'tcp';
+$cfg['Servers'][$i]['port'] = '3308';
+</code></pre>
+                    </div>
+
+                     
+				
+                    
+                </div><!--.col-->
+            </div>
+            <!--/.row-->
+        </div>
+        <!--/.container-->
+    </section>
+
+
+    
+  
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <script src="js/jQuery-v-3.5.1.js"></script> 
+    <script src="js/highlight.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+
+    <script>hljs.initHighlightingOnLoad();</script> 
+    <script>
+        function copyToClipboard(element) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($(element).text()).select();
+            document.execCommand("copy");
+            $temp.remove();
+        }
+    </script>
+    <script>
+        let cards = document.querySelectorAll('.box')
+    
+    function liveSearch() {
+        let search_query = document.getElementById("searchbox").value;
+        
+        //Use innerText if all contents are visible
+        //Use textContent for including hidden elements
+        for (var i = 0; i < cards.length; i++) {
+            if(cards[i].textContent.toLowerCase()
+                    .includes(search_query.toLowerCase())) {
+                cards[i].classList.remove("is-hidden");
+            } else {
+                cards[i].classList.add("is-hidden");
+            }
+        }
+    }
+    
+    //A little delay
+    let typingTimer;               
+    let typeInterval = 500;  
+    let searchInput = document.getElementById('searchbox');
+    
+    searchInput.addEventListener('keyup', () => {
+        clearTimeout(typingTimer);
+        typingTimer = setTimeout(liveSearch, typeInterval);
+    });
+    </script>
+</body>
+
+</html>
