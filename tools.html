@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <!-- CSS only -->   
+    <link rel="stylesheet" href="css/highlight.min.css"> 
+    <!-- My Style CSS --> 
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Usefull Tools</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="header__wrapper">
+        <div class="container"> 
+            <div class='form-container'> 
+                <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </span>
+                <input class='input mb-5' type="search" id="searchbox" placeholder="Live search keyword...">
+            </div>
+        </div> 
+    </div>
+ 
+
+    <section class="second_sec__wrapper">
+        <div class="container">
+            <div class="row justify-content-center cards">
+                <div class="col-3">
+                    <a href="https://useanimations.com/#explore" target="_blank" class="card">
+                        <span class="title">useAnimations <em>Lottie animated icons</em></span>
+                        <img src="images/useanimation.png" alt="image">
+                    </a>
+                    
+                    <button id="showBtn" class="solution__btn">Show how to use</button>
+
+                </div><!--.//col-->
+                <div class="col-3">
+                    <a href="https://remove.photos/" target="_blank" class="card">
+                        <span class="title">Background Remove</span>
+                        <img src="images/bg-removal-slider-1.webp" alt="image">
+                    </a>
+                </div><!--.//col-->
+                <div class="col-3">
+                    <a href="https://favpng.com" target="_blank" class="card">
+                        <span class="title">Fav PNGs</span>
+                        <img src="images/fav-png.png" alt="image">
+                    </a>
+                </div><!--.//col--> 
+                <div class="col-3">
+                    <a href="https://www.stickpng.com/" target="_blank" class="card">
+                        <span class="title">Stick PNG</span>
+                        <img src="images/stickypng.png" alt="image">
+                    </a>
+                </div><!--.//col-->
+                <div class="col-3">
+                    <a href="https://cssgridgenerator.io/" target="_blank" class="card">
+                        <span class="title">CSS Grid Generator</span>
+                        <img src="images/css-grid-genarator.png" alt="image">
+                    </a>
+                </div><!--.//col-->
+                <div class="col-3">
+                    <a href="https://openreplay.com/tools/" target="_blank" class="card">
+                        <span class="title">Developer Toolbox <em>Color converter</em></span>
+                        <img src="images/dev-toolbox.png" alt="image">
+                    </a>
+                </div><!--.//col-->
+
+
+
+
+
+                 
+            </div>
+            <!--/.row-->
+        </div>
+        <!--/.container-->
+    </section>
+
+<dialog id="myDialog">
+<button id="closeBtn" autofocus>Close</button>
+<pre><code class="html">&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"&gt;&lt;/script&gt;
+&lt;div id="menu-btn"&gt;&lt;/div&gt;
+
+&lt;script&gt;
+  const menuBtn = document.getElementById('menu-btn');
+
+  const menuAnimation = lottie.loadAnimation({
+    container: menuBtn,
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+    path: 'menuV4.json' // Make sure this path is correct
+  });
+
+  let isOpen = false;
+
+  menuBtn.addEventListener('click', () =&gt; {
+    if (isOpen) {
+      // Play in reverse
+      menuAnimation.setDirection(-1);
+      menuAnimation.play();
+    } else {
+      // Play forward
+      menuAnimation.setDirection(1);
+      menuAnimation.play();
+    }
+    isOpen = !isOpen;
+  });
+&lt;/script&gt;
+</code></pre>
+</dialog> 
+
+ 
+
+    <!-- Optional JavaScript -->
+    <script src="js/jQuery-v-3.5.1.js"></script> 
+    <script src="js/highlight.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+
+    <script>hljs.initHighlightingOnLoad();</script> 
+    <script>
+        function copyToClipboard(element) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($(element).text()).select();
+            document.execCommand("copy");
+            $temp.remove();
+        }
+    </script>
+    <script>
+        let cards = document.querySelectorAll('.box')
+    
+    function liveSearch() {
+        let search_query = document.getElementById("searchbox").value;
+        
+        //Use innerText if all contents are visible
+        //Use textContent for including hidden elements
+        for (var i = 0; i < cards.length; i++) {
+            if(cards[i].textContent.toLowerCase()
+                    .includes(search_query.toLowerCase())) {
+                cards[i].classList.remove("is-hidden");
+            } else {
+                cards[i].classList.add("is-hidden");
+            }
+        }
+    }
+    
+    //A little delay
+    let typingTimer;               
+    let typeInterval = 500;  
+    let searchInput = document.getElementById('searchbox');
+    
+    searchInput.addEventListener('keyup', () => {
+        clearTimeout(typingTimer);
+        typingTimer = setTimeout(liveSearch, typeInterval);
+    });
+    </script>
+
+    <script>
+    const dialog = document.getElementById("myDialog");
+    const showBtn = document.getElementById("showBtn");
+    const closeBtn = document.getElementById("closeBtn");
+
+    showBtn.addEventListener("click", () => {
+        dialog.showModal(); // opens the dialog as a modal
+    });
+
+    closeBtn.addEventListener("click", () => {
+        dialog.close(); // closes the dialog
+    });
+    </script>
+</body>
+
+</html>

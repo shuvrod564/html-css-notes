@@ -1,7 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/*== Basic Setup ========================*/
+:root {
+    --roboto: 'Roboto', sans-serif;
+    --maven: 'Maven Pro', sans-serif;
+}
 
 * {
     margin: 0;
